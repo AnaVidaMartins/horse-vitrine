@@ -1,89 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Horse - Vitrine Oficial</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horse Vitrine</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      margin: 0;
+      background-color: #f9f9f9;
       color: #222;
     }
     header {
-      background-color: #000;
-      color: #fff;
-      padding: 40px 20px;
+      background-color: #111;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
     header h1 {
-      font-size: 36px;
       margin: 0;
+      font-size: 2em;
     }
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-      color: #ccc;
+    .logo {
+      max-width: 120px;
+      margin: 10px auto;
     }
-    .vitrine {
+    .section {
       padding: 40px 20px;
       text-align: center;
     }
-    .vitrine h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      font-weight: 600;
+    .section h2 {
+      margin-bottom: 10px;
     }
-    .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      justify-content: center;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px 0;
     }
-    .galeria img {
-      max-width: 220px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #777;
-      padding: 20px;
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>HORSE</h1>
-    <p>Marcas Oficiais: Horse Cutelaria & Horse & Thread</p>
-  </header>
 
-  <section class="vitrine">
-    <h2>Horse Cutelaria</h2>
-    <div class="galeria">
-      <img src="images/file-Lqsmzd8QZqvdjx5CGVb46S.png" alt="Faca artesanal">
-      <img src="images/file-EfYqAywgGgR9u8txHPrdss.png" alt="Canivete artesanal">
-      <img src="images/file-Dti4Us382n1r2JPYhmx1PR.png" alt="Mini canivete">
-      <img src="images/file-FNUrVv48yVhFcmZ1jof6As.png" alt="Faca artesanal 2">
-    </div>
-  </section>
+<header>
+  <img class="logo" src="images/logo.png" alt="Logo Horse">
+  <h1>Horse — Vitrine de Marcas</h1>
+</header>
 
-  <section class="vitrine">
-    <h2>Horse & Thread</h2>
-    <div class="galeria">
-      <img src="images/file_0000000008b4522f9cf4547c36c35676.png" alt="Camisa Polo Marinho">
-      <img src="images/file_0000000053a0522f93a4e07d32eae9f4.png" alt="Camisa Social Alternativa">
-      <img src="images/file_000000007d0c522fbb72ad4b1aa6c0aa.png" alt="Camisa Polo Preta">
-      <img src="images/file_000000007fd0522f9b873cdd1f219fc4.png" alt="Camisa Social com Bordado">
-      <img src="images/file_00000000c040522f80193adfdedd4d9d.png" alt="Camisa Social Close Up">
-      <img src="images/file_00000000ff64522f89368b9cfcd24244.png" alt="Etiqueta Horse & Thread">
-    </div>
-  </section>
+<!-- Seção de Roupas -->
+<section class="section" style="background-color: #fff;">
+  <h2>Horse & Thread</h2>
+  <p>Moda minimalista com identidade forte e detalhes únicos.</p>
+  <div class="grid">
+    <img src="images/file_0000000008b4522f9cf4547c36c35676.png" alt="Camisa Polo Marinho">
+    <img src="images/file_0000000053a0522f93a4e07d32eae9f4.png" alt="Camisa Social Alternativa">
+    <img src="images/file_000000007d0c522fbb72ad4b1aa6c0aa.png" alt="Camisa Polo Preta">
+    <img src="images/file_000000007fd0522f9b873cdd1f219fc4.png" alt="Camisa Social com Bordado">
+    <img src="images/file_00000000c040522f80193adfdedd4d9d.png" alt="Camisa Social Close-up">
+    <img src="images/file_00000000ff64522f89368b9cfcd24244.png" alt="Etiqueta da Marca">
+  </div>
+</section>
 
-  <footer>
-    © 2025 Horse. Todos os direitos reservados.
-  </footer>
+<!-- Seção de Cutelaria -->
+<section class="section" style="background-color: #eee;">
+  <h2>Horse Cutelaria — Faca Artesanal</h2>
+  <p>Tradição, precisão e design reunidos em uma peça única.</p>
+  <div class="grid">
+    <img src="images/PXL_20240716_172945598.PORTRAIT.jpg" alt="Faca Artesanal 1">
+    <img src="images/PXL_20240716_173105222.PORTRAIT.jpg" alt="Faca Artesanal 2">
+    <img src="images/PXL_20240716_173128625.PORTRAIT.jpg" alt="Faca Artesanal 3">
+    <img src="images/PXL_20240716_173238184.PORTRAIT.jpg" alt="Faca Artesanal 4">
+  </div>
+</section>
+
 </body>
 </html>
